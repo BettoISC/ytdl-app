@@ -1,4 +1,7 @@
 __pycache__
 *pyc
 supervisord.pid
-.git
+.*
+Dockerfile
+start.sh
+*.md
