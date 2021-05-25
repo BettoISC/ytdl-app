@@ -4,12 +4,9 @@ RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN apk add --no-cache git
 
 
+RUN git clone https://github.com/BettoISC/ytdl-app.git 
 
-RUN rm -r *
-RUN rm -r .g*
-RUN rm -r .P*
-RUN rm -r .d*
-RUN git clone https://github.com/BettoISC/ytdl-app.git .
+WORKDIR ytdl-app
 
 COPY . /app
 RUN pip install -r requirements.txt
@@ -17,5 +14,3 @@ RUN pip install -r requirements.txt
 
 
 # EXPOSE 8080
-
-CMD bash -C './start.sh'
