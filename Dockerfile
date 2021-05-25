@@ -7,8 +7,8 @@ RUN git clone https://github.com/BettoISC/ytdl-app.git
 
 WORKDIR ytdl-app
 
-ENV LISTEN_PORT 8080
-EXPOSE 8080
+ENV LISTEN_PORT $PORT
+EXPOSE $PORT
 
 COPY . /app
 RUN pip install -r requirements.txt
