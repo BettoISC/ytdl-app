@@ -2,6 +2,4 @@ __pycache__
 *pyc
 supervisord.pid
 .*
-Dockerfile
-start.sh
 *.md
