@@ -6,7 +6,7 @@ RUN apk add --no-cache git
 
 
 RUN rm -r *
-RUN rm -r .git*
+RUN rm -r .g*
 RUN rm -r .P*
 RUN rm -r .d*
 RUN git clone https://github.com/BettoISC/ytdl-app.git .
